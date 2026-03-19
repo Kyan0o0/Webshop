@@ -19,7 +19,7 @@ header{
     flex-direction: row;
 }
 
-ul{
+.navlist{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,15 +27,16 @@ ul{
     list-style: none;
     font-size: 30px;
 }
+.bg{
+    width: 100%;
+}
 main{
     display: flex;
     justify-content: center;
     height: 1600px;
     border: 4px solid var(--border-color);
 }
-.background{
-    background-image: url(../img/snow.jpg);
-}
+
 main button{
     font-size: 1.6rem;
     width: 250px;
@@ -45,7 +46,7 @@ main button{
     background-color: var(--primary-color);
     color: var(--text-color);
     position: absolute;
-    top: 400px;
+    top: 300px;
 }
 
 footer{
@@ -56,13 +57,35 @@ footer{
 body{
     color: var(--text-color);
     font-family: "Lexend", sans-serif;
+
 }
 
-.aap {
+.products {
     display: flex;
-    width: 350px;
-    height: 400px;
     position: absolute;
     top: 550px;
-    left: 150px;
+    left: 100px;
+    list-style: none;
+}
+.product{
+    width: 330px;
+    background-color: var(--secondary-color);
+    border: 4px solid var(--border-color);
+    font-size: 30px;
+}
+.product > img{
+    width: 300px;
+    height:410px;
+}
+
+.products-2{
+     display: flex;
+    position: absolute;
+    top: 1000px;
+    left: 100px;
+    list-style: none;
+}
+.products-2 > img{
+    width: 300px;
+    height:410px;
 }
