@@ -17,6 +17,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    
 }
 
 .navlist{
@@ -26,27 +27,40 @@ header{
     gap: 10vw;
     list-style: none;
     font-size: 30px;
+    
+}
+.cta{
+    position: relative;
+    height: 500px;
 }
 .bg{
     width: 100%;
-}
-main{
-    display: flex;
-    justify-content: center;
-    height: 1600px;
-    border: 4px solid var(--border-color);
-}
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
 
-main button{
+}
+.shopnow{
     font-size: 1.6rem;
     width: 250px;
     height: 100px;
+    top: 50%;
     border: none;
     border-radius: 50px;
     background-color: var(--primary-color);
     color: var(--text-color);
-    position: absolute;
-    top: 300px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+}
+main{
+    justify-content: center;
+    border: 4px solid var(--border-color);
+    background-image: url("img/snow.jpg");
 }
 
 footer{
@@ -62,12 +76,16 @@ body{
 
 .products {
     display: flex;
-    position: absolute;
-    top: 550px;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 500px;
     left: 100px;
     list-style: none;
+    gap: 10px;
 }
 .product{
+    display: flex;
+    flex-direction: column;
     width: 330px;
     background-color: var(--secondary-color);
     border: 4px solid var(--border-color);
@@ -78,24 +96,26 @@ body{
     height:410px;
 }
 
-.product-2 > img{
-    width: 300px;
-    height:410px;
+.filterbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.products-2{
-    display: flex;
-    position: absolute;
-    top: 1020px;
-    left: 100px;
-    list-style: none;
+.filter-button{
+    font-size: 1.6rem;
+    width: 200px;
+    height: 70px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    cursor: pointer;
 }
 
-.product-2{
-    display: flex;
-    flex-direction: column;
-    width: 330px;
+.filter-button:hover{
     background-color: var(--secondary-color);
+    color: var(--primary-color);
     border: 4px solid var(--border-color);
-    font-size: 30px;
 }
+    

@@ -21,55 +21,81 @@
     </header>
 
     <main>
+        
         <img class="bg" src="img/snow.jpg" alt="">
-        <button>Shop Now</button>
+         <div class="cta">
+            <button class="shopnow">
+                Shop Now
+            </button>
+        </div>
+        
+        <div class="filterbuttons">
+            <button onclick="filterProducten('attack-on-titan')" class="filter-button">Attack on Titan</button>
+            <button onclick="filterProducten('demon Slayer')" class="filter-button">Demon Slayer</button>
+            <button onclick="filterProducten('one-piece')" class="filter-button">One Piece</button>
+            <button onclick="filterProducten(`jojo's-bizarre-adventure`)" class="filter-button">jjba</button>
+            <button onclick="filterProducten('bleach')" class="filter-button">Bleach</button>
+            <button onclick="filterProducten('chainsaw-man')" class="filter-button">Chainsaw Man</button>
+        </div>
+        
+        
+
         <ul class="products">
-            <li class="product">
+            <li class="product" data-categorie="attack-on-titan">
                 <img src="img/Eren jeager.png" alt="Eren Jeager">
+                <p>Eren Jeager</p>
                 <p>price: 100 euro</p>
             </li>
-            <li class="product">
+            <li class="product" data-categorie="demon Slayer">
                 <img src="img/Tokito.png" alt="Tokito">
+                <p>Tokito</p>
                 <p>price: 100 euro</p>
             </li>
-            <li class="product">
+            <li class="product" data-categorie="one-piece">
                 <img src="img/Chopper.png" alt="Chopper">
+                <p>Chopper</p>
                 <p>price: 100 euro</p>
             </li>
-            <li class="product">
+            <li class="product" data-categorie="jojo's-bizarre-adventure">
                 <img src="img/Jotaro.png" alt="Jotaro">
+                <p>Jotaro</p>
                 <p>price: 100 euro</p>
             </li>
-            <li class="product">
+            <li class="product" data-categorie="bleach">
                 <img src="img/Ichigo.png" alt="Ichigo">
+                <p>Ichigo</p>
+                <p>price: 100 euro</p>
+            </li>
+            <li class="product" data-categorie="chainsaw-man">
+                <img src="img/Reze.png" alt="Reze">
+                <p>Reze</p>
+                <p>price: 100 euro</p>
+            </li>
+            <li class="product" data-categorie="pokémon">
+                <img src="img/Lucario.png" alt="lucario">
+                <p>Lucario</p>
+                <p>price: 100 euro</p>
+            </li>
+            <li class="product" data-categorie="one-piece">
+                <img src="img/Luffy.png" alt="Luffy">
+                <p>Luffy</p>
+                <p>price: 100 euro</p>
+            </li>
+            <li class="product" data-categorie="my-hero-academia">
+                <img src="img/S8deku.png" alt="Deku">
+                <p>Deku</p>
+                <p>price: 100 euro</p>
+            </li>
+            <li class="product" data-categorie="jujutsu-kaisen">
+                <img src="img/Todo.png" alt="Todo">
+                <p>Todo</p>
                 <p>price: 100 euro</p>
             </li>
         </ul>
-        <Ul class="products-2">
-            <li class="product-2">
-                <img src="img/Reze.png" alt="Reze">
-                <p class="text-test">price: 100 euro</p>
-            </li>
-            <li class="product-2">
-                <img src="img/Lucario.png" alt="lucario">
-                <p>price: 100 euro</p>
-            </li>
-            <li class="product-2">
-                <img src="img/Luffy.png" alt="Luffy">
-                <p>price: 100 euro</p>
-            </li>
-            <li class="product-2">
-                <img src="img/S8deku.png" alt="Deku">
-                <p>price: 100 euro</p>
-            </li>
-            <li class="product-2">
-                <img src="img/Todo.png" alt="Todo">
-                <p>price: 100 euro</p>
-            </li>
-        </Ul>
     </main>
 
     <footer>Footer</footer>
+    <script src="filter.js"></script>
 </body>
 
 </html>
